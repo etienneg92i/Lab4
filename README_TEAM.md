@@ -7,6 +7,7 @@
 
 ## 1. Business problem
 
+<Who needs the dashboard? What breaks if the pipeline fails?>
 
 The dashboard is intended for a retail company that wants to monitor daily sales activity.
 
@@ -65,7 +66,7 @@ No duplicate data is created.
 
 ```bash
 docker compose exec airflow-scheduler \
-  airflow dags backfill team_egirar1 -s 2026-06-01 -e 2026-06-07 --reset-dagruns
+  airflow dags backfill team_<shortname> -s 2026-06-01 -e 2026-06-07 --reset-dagruns
 ```
 
 ---
